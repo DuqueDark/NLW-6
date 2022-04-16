@@ -1,0 +1,125 @@
+/* google fonts Poppins 500 e 700 Open Sans 400 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap');
+
+*{
+    /* RESETANDO CSS DO DOCUMENTO */
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    /* CRIANDO VARIAVEIS DE COR */
+    --black: #0D114F;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #F6FAFF;
+    --overlay: #040911;
+    --icons-details: #A5B0C1;
+
+    --gray-dark: #4D5E77;
+    --gray-blue: #A1B2CD;
+    --gray-light: #E5EAF1;
+
+    /*
+    --hover
+    --hover
+    --hover
+    */
+}
+
+html{
+    /* 1rem = 16px (User Agent) = 100% (User Agent) */
+    font-size: 62.5%; /* 10px */
+}
+
+body{
+    height: 100vh; /* vh: View Height = altura da tela */
+    width: 100vw; /* vw: View width = comprimento da tela */
+
+    background-color: var(--background);
+
+}
+
+body, bottom, input, textarea{
+    /* imtervalo de tamanho */
+    /* 1° parametro = menor tamanho possivel da font */
+    /* 2° parametro = padrão da font */
+    /* 3° parametro = tamanho maximo da font */
+    font-size: clamp(14px, 1.6rem, 2vw);
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Poppins', sans-serif;*/
+}
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* esconder elemento */
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* imput and button */
+input, button, .button {
+    border-radius: .8rem;
+    height: 5rem;
+}
+
+button, .button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* Tamanho que acompanha um texto / espaçamento entre as linahs do texto */
+    line-height: 0;
+
+    display: flex;
+    /* Alinhamento vertical flex*/
+    align-items: center;
+    /* alinhamento horizontal flex*/
+    justify-content: center;
+
+    color: var(--white);
+    background: var(--blue);
+
+    cursor: pointer;
+    transition: filter .2s;
+}
+
+/* Hover apica o efeito de seleção */
+button:hover, .button:hover{
+    filter: brightness(1.2);
+}
+
+/* > indica um CSS par um determinado condição de elemento */
+/* exemplo uma imgem em um botão */
+button > img, .button > img{
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+button.outlined, .button.outlined{
+    background: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue)
+
+}
+
+.content header{
+    width: 80%;
+    margin: 3.5rem auto;
+}
+
+.content header img{
+    width: 16.7rem;
+}
