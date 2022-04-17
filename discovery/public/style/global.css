@@ -1,5 +1,5 @@
 /* google fonts Poppins 500 e 700 Open Sans 400 */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap');
 
 *{
     /* RESETANDO CSS DO DOCUMENTO */
@@ -8,6 +8,9 @@
     border: none;
     text-decoration: none;
     box-sizing: border-box;
+}
+
+html{
 
     /* CRIANDO VARIAVEIS DE COR */
     --black: #0D114F;
@@ -19,25 +22,18 @@
     --overlay: #040911;
     --icons-details: #A5B0C1;
 
-    --gray-dark: #4D5E77;
-    --gray-blue: #A1B2CD;
-    --gray-light: #E5EAF1;
+    --grey-dark: #4D5E77;
+    --grey-blue: #A1B2CD;
+    --grey-light: #E5EAF1;
+    --grey-medium: #EAECF2;
 
-    /*
-    --hover
-    --hover
-    --hover
-    */
-}
-
-html{
     /* 1rem = 16px (User Agent) = 100% (User Agent) */
     font-size: 62.5%; /* 10px */
 }
 
 body{
-    height: 100vh; /* vh: View Height = altura da tela */
-    width: 100vw; /* vw: View width = comprimento da tela */
+    display: flex;
+    height: 100vh; /* vh: View Height = altura da tela *//* vw: View width = comprimento da tela */
 
     background-color: var(--background);
 
@@ -77,7 +73,8 @@ input, button, .button {
     height: 5rem;
 }
 
-button, .button {
+button,
+.button {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     /* Tamanho que acompanha um texto / espaçamento entre as linahs do texto */
@@ -97,24 +94,40 @@ button, .button {
 }
 
 /* Hover apica o efeito de seleção */
-button:hover, .button:hover{
+button:hover,
+.button:hover{
     filter: brightness(1.2);
 }
 
 /* > indica um CSS par um determinado condição de elemento */
 /* exemplo uma imgem em um botão */
-button > img, .button > img{
+button > img,
+.button > img{
     margin-right: 1rem;
     width: 2rem;
 }
 
-button.outlined, .button.outlined{
+button.outlined,
+.button.outlined{
     background: var(--white);
     color: var(--blue);
     border: .2rem solid var(--blue)
 
 }
 
+button.red,
+.button.red{
+    background: var(--red);
+    color: var(--white);
+}
+
+button.grey,
+.button.grey{
+    background: var(--grey-light);
+    color: var(--grey-dark);
+}
+
+/******************* HEADER **********************/
 .content header{
     width: 80%;
     margin: 3.5rem auto;

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <!-- TITULO DA PAGINA -->
+        <title>Perguntas e Respostas</title>
+        <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon">
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./style/global.css">
+        <link rel="stylesheet" href="./style/room.css">
+        <link rel="stylesheet" href="./style/modal.css">
+
+        <!-- Add scripts -->                   <!-- Disendo para o html que o script é um modulo -->
+        <script src="scripts/main.js" defer type="module"></script>
+    </head>
+    <body>
+        <div id="room" class="content">
+
+            <header>
+                <a href="index.html">
+                    <img src="./assets/img/logo.svg" alt="logo Rocket.Q">
+                </a>
+
+
+                <div class="buttons">
+                    <div class="button outlined" id="room-id" data-id="323243">
+                        #323232
+                        <img src="./assets/img/copy.svg" alt="Copiar codigo da sala">
+                    </div>
+                    <a class="button" href="#">
+                        <img src="./assets/img/users-white.svg" alt="Criar uma sala">
+                        Criar Sala
+                    </a>
+                </div>
+            </header>
+
+            <main>
+                <section id="question-form">
+                    <h2>Faça Sua Pergunta</h2>
+                    <form action="">
+                        <label for-id="question" class="sr-only">O que vpcê quer perguntar</label>
+                        <textarea name="question" id="question" placeholder="O que você quer perguntar"></textarea>
+
+                        <footer>
+                            <div>
+                                <img src="./assets/img/lock.svg" alt="Cadeado">
+                                Está pergunta é anônima
+                            </div>
+                            <button>Enviar</button>
+                        </footer>
+                    </form>
+                </section>
+
+                <section id="questions">
+                    <h2 class="sr-only">Perguntas da comunidade</h2>
+                    <div class="questions">
+                        <div>
+
+                            <div class="question-wrapper">
+                                <div class="question-content">
+                                    <div class="user">
+                                        <img src="./assets/img/user.svg" alt="Avatar">
+                                    </div>
+                                    <div class="question">
+                                        <p>Qual a diferença entre const, var e let javascripts?</p>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a href="#" class="check">
+                                        <img src="./assets//img/check.svg" alt="marcar como lida">
+                                        Marcar como lida
+                                    </a>
+                                    <a href="#" class="delete">
+                                        <img src="./assets/img/trash.svg" alt="Excluir">
+                                        Excluir
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="question-wrapper">
+                                <div class="question-content">
+                                    <div class="user">
+                                        <img src="./assets/img/user.svg" alt="Avatar">
+                                    </div>
+                                    <div class="question">
+                                        <p>O que é javascript?</p>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a href="#" class="check">
+                                        <img src="./assets//img/check.svg" alt="marcar como lida">
+                                        Marcar como lida
+                                    </a>
+                                    <a href="#" class="delete">
+                                        <img src="./assets/img/trash.svg" alt="Excluir">
+                                        Excluir
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="question-wrapper">
+                                <div class="question-content">
+                                    <div class="user">
+                                        <img src="./assets/img/user.svg" alt="Avatar">
+                                    </div>
+                                    <div class="question">
+                                        <p>DSVOUOVUOOBVARVJREBURBjubvaugbvaj gvbueruiieuvuieurvuaurvueuvuevu eurvbuehuvuvurvugovuruevgruvuurvuaruvuarbvubavbabvabbvabuvba ubvbabvab vauguvuiuvbabvagvgagdfgvabvbab vbabbabaguguaguvbuauohvuoarygvanjbvoawvnagiuchohuhoiwvguiehn</p>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a href="#" class="check">
+                                        <img src="./assets//img/check.svg" alt="marcar como lida">
+                                        Marcar como lida
+                                    </a>
+                                    <a href="#" class="delete">
+                                        <img src="./assets/img/trash.svg" alt="Excluir">
+                                        Excluir
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="question-wrapper read">
+                                <div class="question-content">
+                                    <div class="user">
+                                        <img src="./assets/img/user.svg" alt="Avatar">
+                                    </div>
+                                    <div class="question">
+                                        <p>O que é typescript?</p>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a href="#" class="check">
+                                        <img src="./assets//img/check.svg" alt="marcar como lida">
+                                        Marcar como lida
+                                    </a>
+                                    <a href="#" class="delete">
+                                        <img src="./assets/img/trash.svg" alt="Excluir">
+                                        Excluir
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+        </div>
+
+        <div id="modal" class="modal-wrapper">
+            <div class="modal">
+                <h2>Excluir</h2>
+                <p>Tem certeza você que deseja excluir está pergunta?</p>
+                <form action="#" method="POST">
+                    <label class="sr-only" for-id="password">Digite a senha</label>
+                    <input type="password" id="password" placeholder="Digite a senha">
+
+                    <div class="buttons">
+                        <div class="button grey cancel">Cancelar</div>
+                        <button class="red">Sim, excluir</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </body>
+</html>
