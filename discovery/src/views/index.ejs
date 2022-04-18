@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
         <!-- TITULO DA PAGINA -->
-        <title>Criando Sala</title>
+        <title>Rocket.Q</title>
         <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon">
 
         <!-- Style CSS -->
@@ -17,7 +17,7 @@
         <div class="content" id="home">
 
             <header>
-                <img src="./assets/img/logo.svg" alt="logo Rocket.Q">
+                <a href="/"><img src="./assets/img/logo.svg" alt="logo Rocket.Q"></a>
             </header> 
 
             <div id="bg">
@@ -27,15 +27,7 @@
 
             <main>
                 <div class="container">
-
-                    <section>
-                        <h2>Crie sua própria sala</h2>
-                        <form action="">
-                            <label class="sr-only" for="room-id">Insira uma senha</label>
-                            <input type="number" id="room-pass" placeholder="Codigo da sala">
-                            <button><img src="./assets/img/users-white.svg" alt="enter pass"> Criar sala</button>
-                        </form>
-                    </section>
+                    <%- include(`./components/${ page }`)  %>  
                 </div>
             </main>
         </div>
