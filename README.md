@@ -1,3 +1,5 @@
-# NLW-6
+# Caminho do Discovery
 
-Trilhas de conhecimento completo do NLW-6 da rocketseat
+Intuito da trila é focar desenvolvimento em back-end
+
+Projeto perguntas anonimas
